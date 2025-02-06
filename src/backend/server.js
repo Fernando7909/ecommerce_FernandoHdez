@@ -5,7 +5,7 @@ const Stripe = require('stripe');
 const nodemailer = require('nodemailer');
 
 // Configura Stripe amb la teva clau secreta
-const stripe = new Stripe('sk_test_51QSgOrLqhhGqu8RPiYc4CASf4JSGP0Rj3PpPf39pMVg5RY2jm0O1PlMRt27rz8lo8eNY20TNZIS9plvzCnYBXO5z00IDIK26w6'); // Substitueix amb la clau secreta
+const stripe = new Stripe(STRIPE_SECRET_KEY); // Substitueix amb la clau secreta
 
 const app = express();
 const PORT = 3001;
