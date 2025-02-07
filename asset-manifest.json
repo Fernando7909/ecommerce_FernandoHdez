@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ecommerce_fernando/static/css/main.e6c13ad2.css",
-    "main.js": "/ecommerce_fernando/static/js/main.32f2259f.js",
+    "main.js": "/ecommerce_fernando/static/js/main.51f7493e.js",
     "static/js/453.547a01ba.chunk.js": "/ecommerce_fernando/static/js/453.547a01ba.chunk.js",
     "index.html": "/ecommerce_fernando/index.html",
     "main.e6c13ad2.css.map": "/ecommerce_fernando/static/css/main.e6c13ad2.css.map",
-    "main.32f2259f.js.map": "/ecommerce_fernando/static/js/main.32f2259f.js.map",
+    "main.51f7493e.js.map": "/ecommerce_fernando/static/js/main.51f7493e.js.map",
     "453.547a01ba.chunk.js.map": "/ecommerce_fernando/static/js/453.547a01ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.32f2259f.js"
+    "static/js/main.51f7493e.js"
   ]
 }
