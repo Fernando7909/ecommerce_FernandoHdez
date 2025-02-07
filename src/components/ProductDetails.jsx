@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { useParams } from "react-router-dom";
 import { collection, query, where, getDocs } from "firebase/firestore";
-import { db } from "../firebaseConfig"; // Asegúrate de importar correctamente tu configuración de Firebase
+import { db } from "../../src/components/firebaseConfig"; // Asegúrate de importar correctamente tu configuración de Firebase
 
 const ProductDetails = () => {
   const { id } = useParams(); // Obtener el ID desde la URL

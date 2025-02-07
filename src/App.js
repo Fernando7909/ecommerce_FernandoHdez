@@ -14,6 +14,9 @@ import PoliticaPrivadesa from "./components/PoliticaPrivadesa";
 import CondicionsUs from "./components/CondicionsUs"; 
 import ContactForm from "./components/ContactForm";
 
+// Página de error 404
+const NotFound = () => <h1>Pàgina no trobada (404)</h1>;
+
 const Success = () => <h1>Pagament completat!</h1>;
 const Cancel = () => <h1>El pagament s'ha cancel·lat.</h1>;
 
@@ -24,14 +27,11 @@ const App = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          minHeight: "100vh", // Assegura que el Footer sempre quedi al final
+          minHeight: "100vh", // Asegura que el Footer siempre quede al final
         }}
       >
-        {/* CssBaseline assegura un estil consistent */}
         <CssBaseline />
-        {/* Barra de navegació */}
         <Navbar />
-        {/* Configuració de rutes */}
         <Routes>
           <Route
             path="/"
@@ -46,14 +46,17 @@ const App = () => {
           <Route path="/success" element={<Success />} />
           <Route path="/cancel" element={<Cancel />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
-          <Route path="/authentication" element={<Authentication />} /> {/* Ruta afegida */}
-          
+          <Route path="/authentication" element={<Authentication />} />
+          <Route path="/ecommerce_fernando" element={<ProductGrid />} /> 
+
           {/* Rutas nuevas para las páginas legales y contacto */}
           <Route path="/politica-privadesa" element={<PoliticaPrivadesa />} />
           <Route path="/condicions-us" element={<CondicionsUs />} />
           <Route path="/contacte" element={<ContactForm />} />
+
+          {/* 🚨 Ruta de fallback para manejar errores 404 */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
-        {/* Peu de pàgina */}
         <Footer />
       </Box>
     </Router>

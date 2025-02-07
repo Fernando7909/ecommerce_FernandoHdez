@@ -15,7 +15,8 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Link } from "react-router-dom";
 import SidebarFilters from "./SidebarFilters"; // Importamos el filtro
 
-const stripePromise = loadStripe(REACT_APP_FIREBASE_API_KEY);
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+
 
 const ProductGrid = () => {
   const [products, setProducts] = useState([]); // Lista original de productos
