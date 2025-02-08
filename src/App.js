@@ -47,7 +47,6 @@ const App = () => {
           <Route path="/cancel" element={<Cancel />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
           <Route path="/authentication" element={<Authentication />} />
-          {/* <Route path="/ecommerce_fernando" element={<ProductGrid />} />  */}
 
           {/* Rutas nuevas para las páginas legales y contacto */}
           <Route path="/politica-privadesa" element={<PoliticaPrivadesa />} />
